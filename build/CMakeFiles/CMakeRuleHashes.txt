@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+07cabbb4b7e2c064d8015ea70fcb2664 include/moc_openCVStudents.cpp
+946348d79db1231ae96b3846e9ee43ed include/moc_workerthread.cpp

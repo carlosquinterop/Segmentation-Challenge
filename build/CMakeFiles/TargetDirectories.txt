@@ -1,0 +1,3 @@
+/home/carlosq/projects/openCVStudents/build/CMakeFiles/rebuild_cache.dir
+/home/carlosq/projects/openCVStudents/build/CMakeFiles/edit_cache.dir
+/home/carlosq/projects/openCVStudents/build/CMakeFiles/opencvstudents.dir

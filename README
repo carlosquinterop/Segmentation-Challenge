@@ -1,0 +1,5 @@
+sudo apt-get install build-essential cmake qtdeclarative5-dev git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+sudo apt-get install libqt5serialport5-dev
+
+Steps to install openCV
+https://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html?highlight=installation
