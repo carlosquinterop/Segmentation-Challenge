@@ -126,7 +126,6 @@ void openCVStudents::openSerialPort()
     {
 	serialPort = new QSerialPort();
 	serialPort->setPortName("ttyACM0");//For Arduino
-	//serialPort->setBaudRate(QSerialPort::Baud19200);
 	serialPort->setBaudRate(QSerialPort::Baud115200);
 	serialPort->setDataBits(QSerialPort::Data8);
 	serialPort->setParity(QSerialPort::NoParity);
@@ -171,7 +170,6 @@ void openCVStudents::sendSerialMessage(char instruction)
 {
     if (serialConnected)
     {
-	cout << (int)instruction << endl;
 	const char* data = &instruction;
 	if(serialPort->isOpen())
 	    serialPort->write(data);
@@ -201,7 +199,7 @@ void openCVStudents::showImage()
 void openCVStudents::captureImage()
 {
     myThread->setWorkingThread(true);
-    //myThread->
+    myThread->setCameraId(camId->currentIndex());
     myThread->start();
     stopCaptureButton->setEnabled(true);
     captureButton->setEnabled(false);
